@@ -1,0 +1,6 @@
+import subprocess
+for i in range(5,6):
+ #command = "androguard cg " + "D://1//1 (" + '%d' % i + ').apk'+ '-o'+'D://cfg/bad/'+'%d' % i + ').gml'
+ # command = "androguard cg " + " D://1//"+'%d' % i + '.apk'+ ' -o' + ' D://cfg/pipei/' + '%d' % i + '.gml'
+ command = "androguard cg " + " D://tool//"+'test1_signed.apk'+ ' -o' + ' D://cfg/pipei/' + '%d' % i + '.gml'
+ subprocess.call(command, shell=True)
